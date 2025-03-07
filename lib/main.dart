@@ -20,9 +20,12 @@ class MyApp extends StatelessWidget {
             fontSize: 16,
           )),
           fontFamily: 'Lato',
+          textTheme: const TextTheme(
+              titleMedium: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              bodySmall: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
           colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color.fromRGBO(254, 206, 1, 1),
-          )),
+              seedColor: const Color.fromRGBO(254, 206, 1, 1),
+              primary: const Color.fromRGBO(254, 206, 1, 1))),
       home: const HomePage(),
     );
   }
